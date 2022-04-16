@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Deck(props) {
+function ScorePanel(props) {
   return (
     <div>
 
@@ -9,4 +9,4 @@ function Deck(props) {
   );
 }
 
-export default Deck;
+export default ScorePanel;

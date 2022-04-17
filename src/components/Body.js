@@ -3,8 +3,6 @@ import React from 'react';
 import GamePanel from './GamePanel/GamePanel';
 import ScorePanel from './ScorePanel/ScorePanel';
 
-import './styles/App.css';
-
 
 function App() {
   return (

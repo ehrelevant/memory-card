@@ -6,9 +6,9 @@ import ScorePanel from './ScorePanel/ScorePanel';
 
 function App() {
   return (
-    <div>
-      <GamePanel />
+    <div className="Body">
       <ScorePanel />
+      <GamePanel />
     </div>
   );
 }

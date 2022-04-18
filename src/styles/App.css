@@ -1,0 +1,69 @@
+.App {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.Body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffff;
+}
+
+.ScorePanel {
+    margin: 0;
+    padding: 0;
+
+    height: 100px;
+    width: 100%;
+
+    background-color: #3d3747;
+}
+
+.GamePanel {
+    margin: 0;
+    padding: 20px 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Card {
+    margin: 10px 1%;
+    padding: 0;
+
+    height: 360px;
+    width: 12%;
+    min-width: 260px;
+
+    border-radius: 15px;
+
+    background-color: #3d3747;
+    cursor: pointer;
+}
+
+
+.Footer {
+    margin: 0;
+    padding: 0;
+
+    height: 50px;
+    width: 100%;
+
+    background-color: #3d3747;
+}

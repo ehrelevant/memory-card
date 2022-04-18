@@ -5,7 +5,7 @@ import '../../styles/Card.css'
 
 function Card(props) {
   return (
-    <div>
+    <div className="Card">
 
     </div>
   );

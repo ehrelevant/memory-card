@@ -1,10 +1,24 @@
 import React from 'react';
 
+import Card from './Card'
+
 
 function GamePanel(props) {
   return (
-    <div>
-      
+    <div className="GamePanel">
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </div>
   );
 }

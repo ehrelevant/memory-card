@@ -4,13 +4,15 @@ import GamePanel from './GamePanel/GamePanel';
 import ScorePanel from './ScorePanel/ScorePanel';
 
 
-function App() {
+function Body(props) {
+  const { pokemonIdList } = props;
+
   return (
     <div className="Body">
       <ScorePanel />
-      <GamePanel />
+      <GamePanel pokemonIdList={pokemonIdList}/>
     </div>
   );
 }
 
-export default App;
+export default Body;

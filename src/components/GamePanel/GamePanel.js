@@ -1,24 +1,18 @@
 import React from 'react';
 
-import Card from './Card'
+import Card from './Card';
 
 
 function GamePanel(props) {
+  const { pokemonIdList } = props;
+
   return (
     <div className="GamePanel">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {pokemonIdList.map(pkId => {
+        return (
+          <Card pokemonId={pkId} key={pkId} />
+        )
+      })}
     </div>
   );
 }

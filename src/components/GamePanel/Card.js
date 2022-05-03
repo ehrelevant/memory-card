@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 import { fetchPokemonData } from '../../modules/cardInfo';
-import '../../styles/Card.css'
 
 
 function Card(props) {
@@ -28,7 +27,7 @@ function Card(props) {
   return (
     <div className="Card">
       <img className="card-image" src={state.imageUrl} alt="" />
-      <p>{state.name}</p>
+      <p className="card-name">{state.name}</p>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 # Memory Card Game
 
-This is a Memory Card Game application made for "The Odin Project". For this project, I am creating a Memory game in reactJS using react hooks. One possible future improvement to the application would be to fetch data for all 151 cards before the user begins the game (preprocessing/preloading).
+This is a Memory Card Game application made for "The Odin Project". For this project, I created a Memory card game in reactJS with the use of react hooks, the pokeapi database, and the pokeapi-js-wrapper package. One possible future improvement to the application would be to fetch/load the data for all 151 cards before the user begins the game to reduce the number of api fetches done.
 
 [Live Demo](https://kindaexists.github.io/memory-card/)

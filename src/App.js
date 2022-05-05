@@ -43,7 +43,6 @@ function App() {
 
   return (
     <div className="App">
-      {console.log(state.usedCardIds)}
       <Body score={state.score}
             highScore={state.highScore}
             pokemonIdList={state.displayCardIds}

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 import { fetchPokemonData } from '../../modules/cardInfo';
-
+import { capitilizeFirstLetter } from '../../modules/helpers';
 
 function Card(props) {
-  const { pokemonId } = props;
+  const { pokemonId, pickCard } = props;
   const [state, setState] = useState({
     name: '',
     imageUrl: '',
@@ -14,7 +14,7 @@ function Card(props) {
   useEffect(() => {
     fetchPokemonData(pokemonId).then(res => {
       setState({
-        name: res.name,
+        name: capitilizeFirstLetter(res.name),
         imageUrl: res.sprites.front_default,
         id: res.id,
       });
@@ -25,7 +25,7 @@ function Card(props) {
   });
 
   return (
-    <div className="Card">
+    <div className="Card" onClick={(evt) => pickCard(evt, pokemonId)}>
       <img className="card-image" src={state.imageUrl} alt="" />
       <p className="card-name">{state.name}</p>
     </div>

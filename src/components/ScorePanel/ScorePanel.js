@@ -2,10 +2,12 @@ import React from 'react';
 
 
 function ScorePanel(props) {
+  const { score, highScore } = props;
+
   return (
     <div className="ScorePanel">
-      <p>Score: 0</p>
-      <p>High Score: 0</p>
+      <p>Score: {score}</p>
+      <p>High Score: {highScore}</p>
     </div>
   );
 }

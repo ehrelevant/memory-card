@@ -5,12 +5,12 @@ import ScorePanel from './ScorePanel/ScorePanel';
 
 
 function Body(props) {
-  const { pokemonIdList } = props;
+  const { score, highScore, pokemonIdList, pickCard } = props;
 
   return (
     <div className="Body">
-      <ScorePanel />
-      <GamePanel pokemonIdList={pokemonIdList}/>
+      <ScorePanel score={score} highScore={highScore} />
+      <GamePanel pokemonIdList={pokemonIdList} pickCard={pickCard} />
     </div>
   );
 }

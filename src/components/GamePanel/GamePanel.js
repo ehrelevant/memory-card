@@ -4,13 +4,13 @@ import Card from './Card';
 
 
 function GamePanel(props) {
-  const { pokemonIdList } = props;
+  const { pokemonIdList, pickCard } = props;
 
   return (
     <div className="GamePanel">
       {pokemonIdList.map(pkId => {
         return (
-          <Card pokemonId={pkId} key={pkId} />
+          <Card pokemonId={pkId} key={pkId} pickCard={pickCard} />
         )
       })}
     </div>
